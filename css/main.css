@@ -49,6 +49,7 @@ a{
     animation-duration: 0.1s;
     animation-delay: 1.9s;
     animation-fill-mode: forwards;
+    display: none;
     }
      
 @keyframes intro1{
@@ -533,15 +534,16 @@ a{
 
 .info{
   font-family: 'Noto Sans KR',sans-serif;
-  width: 415px;
+  width: 440px;
 }
 .info>.aboutme{
   margin-bottom: 30px;
 }
-.info>.aboutme>h2{
-  font-size: 18px;
-  font-weight: bold;
+.info>.aboutme>img{
+  width: 25px;
+  height: 25px;
 }
+
 .info>.aboutme>h2::after{
   content: "";
   display: block;
@@ -554,7 +556,7 @@ a{
 .info>.aboutme>h2::before{
   content: "";
   display: block;
-  width: 400px;
+  width: 425px;
   height: 1px;
   background: #000;
   position: relative;
@@ -562,7 +564,7 @@ a{
 }
 .info>.aboutme>dl{
   font-size: 12px;
-  line-height: 50px;
+  line-height: 45px;
 }
 .info>.aboutme>dl>dt{
   float: left;
@@ -574,7 +576,45 @@ a{
   font-size: 13px;
 }
 
-
+.info>.skills>.ht>dt>img{
+  width: 22px;
+  height: 22px;
+  margin-right: 12px;
+}
+.info>.skills>.cs>dt>img{
+  width: 22px;
+  height: 22px;
+  margin-right: 12px;
+}
+.info>.skills>.js>dt>img{
+  width: 22px;
+  height: 22px;
+  margin-right: 12px;
+  margin-bottom: 3px;
+}
+.info>.skills>.ps>dt>img{
+  width: 22px;
+  height: 22px;
+  margin-right: 12px;
+  margin-bottom: 3px;
+}.info>.skills>.is>dt>img{
+  width: 22px;
+  height: 22px;
+  margin-right: 12px;
+  margin-bottom: 3px;
+}
+.info>.skills>.ind>dt>img{
+  width: 22px;
+  height: 22px;
+  margin-right: 12px;
+  margin-bottom: 3px;
+}
+.info>.skills>.figma>dt>img{
+  width: 22px;
+  height: 22px;
+  margin-right: 12px;
+  margin-bottom: 3px;
+}
 .info>.skills>h2{
   font-size: 18px;
   font-weight: bold;
@@ -591,7 +631,7 @@ a{
 .info>.skills>h2::before{
   content: "";
   display: block;
-  width: 400px;
+  width: 425px;
   height: 1px;
   background: #000;
   position: relative;
@@ -599,7 +639,7 @@ a{
 }
 .info>.skills>dl{
   font-size: 12px;
-  line-height: 50px;
+  line-height: 46px;
  
 }
 .info>.skills>dl>dt{
@@ -655,7 +695,12 @@ a{
   background: none;
   box-shadow: 0 0 0 1px #333bff inset;
 }
-
+.info>.skills>.figma>dd:nth-child(2),
+.info>.skills>.figma>dd:nth-child(3),
+.info>.skills>.figma>dd:nth-child(4){
+  background: none;
+  box-shadow: 0 0 0 1px #333bff inset;
+}
 /* con */
 .con{
   margin: 250px auto;
@@ -761,7 +806,7 @@ transition: all 0.4s cubic-bezier(1, 0, 0, 1)
   left: 159px;
   width: 507px;
   height: 320px;
-  z-index: 50;
+  z-index: 10;
   overflow: hidden;
 }
 .mockup>img{
@@ -832,7 +877,7 @@ transition: all 0.4s cubic-bezier(1, 0, 0, 1)
   left: 202px;
   width: 181px;
   height: 395px;
-  z-index: 50;
+  z-index: 10;
   overflow: hidden;
   border-radius: 25px;
 }
@@ -849,7 +894,7 @@ transition: all 0.4s cubic-bezier(1, 0, 0, 1)
   left: -33px;
   width: 181px;
   height: 395px;
-  z-index: 50;
+  z-index: 10;
   overflow: hidden;
   border-radius: 25px;
 }
